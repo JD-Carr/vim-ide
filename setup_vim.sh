@@ -20,9 +20,9 @@
 # needs to occur first so `git foreach` updating won't fail
 # Not strictly needed for first installation, but here for posterity
 
-set -o nounset  # exit with non-zero status if expansion is attempted on an unset variable
-set -o errexit  # exit immediatelly if a pipeline, a list, or a compound command fails
-set -o pipefail # failures in pipe in the commands before last one, also count as failures
+#set -o nounset  # exit with non-zero status if expansion is attempted on an unset variable
+#set -o errexit  # exit immediatelly if a pipeline, a list, or a compound command fails
+#set -o pipefail # failures in pipe in the commands before last one, also count as failures
 #set -o xtrace   # explicitly print out executed commands, for debugging
 
 afterftdir="${HOME}/.local/share/vim/after/ftplugin"
