@@ -28,6 +28,7 @@ set -o pipefail # failures in pipe in the commands before last one, also count a
 afterftdir="${HOME}/.local/share/vim/after/ftplugin"
 [[ ! -d "${afterftdir}" ]] && mkdir --parents "${afterftdir}"
 
+mv ./.vimrc "${HOME}/.vim"
 mv ./python.vim "${afterftdir}"
 
 packdir="${HOME}/.local/share/vim/pack"
